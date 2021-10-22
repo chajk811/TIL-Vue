@@ -1,5 +1,4 @@
-==> 에러
-    처음 event 가 null 인 상태에서 dom 을 그릴 때, .으로 접근하려 할때 에러
+==> 에러 : 처음 event 가 null 인 상태에서 dom 을 그릴 때, .으로 접근하려 할때 에러
 ```
 <template>
   <div>
@@ -34,8 +33,7 @@ export default {
 </script>
 ```
 
-==> 해결1
-    event 의 데이터를 그려야하는 큰 태그를 v-if 로 감싸 데이터가 들어왔을 때 그리도록 한다.
+==> 해결1 : event 의 데이터를 그려야하는 큰 태그를 v-if 로 감싸 데이터가 들어왔을 때 그리도록 한다.
 ```
 <template>
   <div v-if="event">
@@ -70,8 +68,7 @@ export default {
 </script>
 ```
 
-==> 해결2
-    event 를 풀어서 data 에 선언해준다.
+==> 해결2 : event 를 풀어서 data 에 선언해준다.
 ```
 <template>
   <div>
